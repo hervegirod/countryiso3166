@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<countries>
+   <country name="Afghanistan" alpha2 ="AF" alpha3="AFG" numeric="004" /> 
+   <country name="France" alpha2 ="FR" alpha3="FRA" numeric="250" />    
+   <country name="Japan" alpha2 ="JP" alpha3="JPN" numeric="392" />     
+   <country name="Finland" alpha2 ="FI" alpha3="FIN" numeric="246" />    
+   <country name="Norway" alpha2 ="NO" alpha3="NOR" numeric="578" />     
+   <country name="Italy" alpha2 ="IT" alpha3="ITA" numeric="380" /> 
+   <country name="Germany" alpha2 ="DE" alpha3="DEU" numeric="376" />
+   <country name="Iceland" alpha2 ="IS" alpha3="ISL" numeric="352" />                    
+   <country name="United Kingdom of Great Britain and Northern Ireland" alpha2 ="GB" alpha3="GBR" numeric="826">  
+      <altName name="United Kingdom" />
+   </country> 
+   <country name="United States of America" alpha2 ="US" alpha3="USA" numeric="840">  
+      <altName name="United States" />
+   </country>        
+</countries>

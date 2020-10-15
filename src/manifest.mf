@@ -1,0 +1,2 @@
+Automatic-Module-Name: org.girod.iso3166
+Main-Class: org.girod.iso3166.Country

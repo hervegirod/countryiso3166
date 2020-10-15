@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See commented blocks below for -->
+<!-- some examples of how to customize the build. -->
+<project name="CountryISO3166" default="default" basedir=".">
+    <description>Builds, tests, and runs the project CountryISO3166.</description>
+    <import file="nbproject/build-impl.xml"/>
+   <!-- =================================================================== -->
+   <!-- post NB init                                                          -->
+   <!-- =================================================================== -->
+
+   <target name="-post-init">
+      <!-- general properties definition -->
+      <property name="archiveName" value="CountryISO3166"/>
+      <property name="j2seapi" value="http://docs.oracle.com/javase/7/docs/api/"/>        
+      <!-- To set with your location of Java 8 JDK -->
+      <property name="javadocDir" value="${jdk.home}/docs/api"/>
+      <property name="javadocEXE" value="${jdk.home}/bin/javadoc.exe"/>        
+   </target>
+
+   <!-- =================================================================== -->
+   <!-- Non NB targets                                                          -->
+   <!-- =================================================================== -->
+
+   <target description="fetch version" depends="-init-project" name="version">
+      <loadproperties srcFile="${src.dir}/org/girod/iso3166/country.properties">
+         <filterchain>
+            <linecontains>
+               <contains value="version"/>
+            </linecontains>
+         </filterchain>
+      </loadproperties>
+   </target>
+
+   <!-- =================================================================== -->
+   <!-- zip files                                                          -->
+   <!-- =================================================================== -->
+
+   <!-- zip javadocs -->
+   <target depends="version, -post-init" description="create javadoc zip files" name="zipjavadoc" if="javadoc.exists">
+      <zip compress="true" defaultexcludes="true" zipfile="${dist.dir}/${archiveName}-docs-${version}.zip">
+         <fileset description="documentation" dir="${dist.javadoc.dir}">
+            <include name="**/*"/>
+         </fileset>
+      </zip>
+   </target>
+
+   <target depends="version, -post-init, zipjavadoc" description="create zip files" name="zip">
+      <!-- zip binary files -->
+      <zip compress="true" defaultexcludes="true" zipfile="${dist.dir}/${archiveName}-bin-${version}.zip">
+         <fileset description="misc" dir=".">
+            <include name="README.md"/>
+            <include name="CHANGES"/>
+            <include name="LICENSE"/>
+         </fileset>
+         <fileset description="binaries" dir="${dist.dir}">
+            <include name="CountryISO3166.jar"/>
+         </fileset>
+      </zip>
+      <!-- zip source files distribution -->
+      <zip compress="true" defaultexcludes="yes" zipfile="${dist.dir}/${archiveName}-src-${version}.zip">
+         <fileset description="core source directory" dir="${src.dir}/..">
+            <include name="src/**/*.java"/>
+            <include name="src/**/*.xml"/>
+            <include name="src/**/*.properties"/>
+            <include name="src/manifest.mf"/>
+         </fileset>
+         <fileset description="binaries" dir="${dist.dir}">
+            <include name="CountryISO3166.jar"/>
+         </fileset>
+         <fileset description="project" dir="${dist.dir}/..">
+            <include name="nbproject/**/*.*"/>
+         </fileset>                
+         <fileset description="misc" dir=".">
+            <include name="README.md"/>
+            <include name="CHANGES"/>
+            <include name="LICENSE"/>
+            <include name="build.xml"/>
+         </fileset>
+      </zip>
+      <!-- zip test source files  -->
+      <zip compress="true" defaultexcludes="true" zipfile="${dist.dir}/${archiveName}-tests-${version}.zip">
+         <fileset description="tests directory" dir="${test.src.dir}/..">
+            <include name="test/**/*.*"/>
+         </fileset>
+      </zip>
+   </target>    
+    
+   <!-- =================================================================== -->
+   <!-- NB overwrite targets : javadocs                                     -->
+   <!-- =================================================================== -->
+
+   <target depends="-javadoc-core" name="-javadoc-build" />
+
+   <target depends="init, -init-project, -post-init" name="-javadoc-core">
+      <!-- Javadoc -->
+      <javadoc author="${javadoc.author}" charset="UTF-8" destdir="${dist.javadoc.dir}"
+               docencoding="UTF-8" encoding="${javadoc.encoding.used}" failonerror="true"
+               noindex="${javadoc.noindex}" nonavbar="${javadoc.nonavbar}"
+               notree="${javadoc.notree}" private="${javadoc.private}"
+               source="${javac.source}" splitindex="${javadoc.splitindex}"
+               use="${javadoc.use}" useexternalfile="true" version="${javadoc.version}"
+               windowtitle="${javadoc.windowtitle}" executable="${javadocEXE}" >         
+         <link href="${j2seapi}" />
+         <!-- the Xdoclint argument avoid to get javadoc errors when the documentation format is not compliant for HTML 4, which was the case before
+         Java 8. It would also not be a good idea, because empty tags like br are very useful -->
+         <arg line="-Xdoclint:none"/>
+         <classpath>
+            <path path="${tools.dir}/junit-4.12.jar"/>
+         </classpath>         
+         <fileset dir="${src.dir}" excludes="${excludes}" includes="${includes}">
+            <filename name="**/*.java"/>
+         </fileset>                  
+      </javadoc>
+   </target>     
+
+   <!-- =================================================================== -->
+   <!-- NB overwrite targets : jar                                     -->
+   <!-- =================================================================== -->
+
+   <target depends="init,compile,-pre-jar,-do-jar-without-manifest,-post-jar" description="Build JAR." name="jar"/>
+
+   <target name="-do-jar-without-manifest" depends="init,compile,-pre-pre-jar,-pre-jar" >
+      <!-- Core jar construction -->
+      <jar description="core jar binary file" compress="true"
+             jarfile="${dist.dir}/CountryISO3166.jar" manifest="${src.dir}/manifest.mf" >
+         <fileset defaultexcludes="yes" dir="${build.classes.dir}">
+            <include name="org/**/*.class"/>
+            <include name="org/**/*.xml"/>
+            <include name="org/**/*.properties"/>
+         </fileset>
+      </jar>
+   </target>
+</project>
