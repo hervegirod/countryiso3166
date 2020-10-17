@@ -1,5 +1,5 @@
 # countryiso3166
-A Java library allowing to get the country codes
+A Java library allowing to get the country codes. See https://en.wikipedia.org/wiki/ISO_3166-1
 
 # Usage
 ## Get a Country
