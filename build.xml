@@ -12,6 +12,9 @@
       <!-- general properties definition -->
       <property name="archiveName" value="CountryISO3166"/>
       <property name="j2seapi" value="http://docs.oracle.com/javase/7/docs/api/"/>        
+      <condition property="javadoc.exists">
+         <available file="${dist.javadoc.dir}" type="dir"/>
+      </condition>      
       <!-- To set with your location of Java 8 JDK -->
       <property name="javadocDir" value="${jdk.home}/docs/api"/>
       <property name="javadocEXE" value="${jdk.home}/bin/javadoc.exe"/>        
