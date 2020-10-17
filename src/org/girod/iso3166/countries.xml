@@ -1,17 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <countries>
    <country name="Afghanistan" alpha2 ="AF" alpha3="AFG" numeric="004" /> 
+   <country name="Argentina" alpha2 ="AR" alpha3="ARG" numeric="032" />
+   <country name="Austria" alpha2 ="AT" alpha3="AUT" numeric="040"/>                    
+   <country name="Belgium" alpha2 ="BE" alpha3="BEL" numeric="056" />  
+   <country name="Bolivia (Plurinational State of)" alpha2 ="BO" alpha3="BOL" numeric="068">  
+      <altName name="Bolivia" />
+   </country>    
+   <country name="Brazil" alpha2 ="BR" alpha3="BRA" numeric="076" />  
+   <country name="Canada" alpha2 ="CA" alpha3="CAN" numeric="124" />   
+   <country name="China" alpha2 ="CH" alpha3="CHN" numeric="156" />    
+   <country name="Colombia" alpha2 ="CO" alpha3="CON" numeric="170" />              
+   <country name="Croatia" alpha2 ="HR" alpha3="HRV" numeric="191" />     
+   <country name="Dominica" alpha2 ="DM" alpha3="DMA" numeric="212" />  
+   <country name="Egypt" alpha2 ="EG" alpha3="EGY" numeric="818" />   
+   <country name="Estonia" alpha2 ="EE" alpha3="EST" numeric="233" />              
+   <country name="Finland" alpha2 ="FI" alpha3="FIN" numeric="246" />      
    <country name="France" alpha2 ="FR" alpha3="FRA" numeric="250" />    
-   <country name="Japan" alpha2 ="JP" alpha3="JPN" numeric="392" />     
-   <country name="Finland" alpha2 ="FI" alpha3="FIN" numeric="246" />    
+   <country name="Germany" alpha2 ="DE" alpha3="DEU" numeric="376" />   
+   <country name="Greece" alpha2 ="GR" alpha3="GRC" numeric="300" />   
+   <country name="Greenland" alpha2 ="GL" alpha3="GRL" numeric="304" />        
+   <country name="Hong Kong" alpha2 ="HK" alpha3="HKG" numeric="344" />       
+   <country name="Hungary" alpha2 ="HU" alpha3="HUN" numeric="348" />        
+   <country name="Iceland" alpha2 ="IS" alpha3="ISL" numeric="352" />   
+   <country name="Israel" alpha2 ="IL" alpha3="ISR" numeric="376" />                            
+   <country name="Italy" alpha2 ="IT" alpha3="ITA" numeric="380" />    
+   <country name="Japan" alpha2 ="JP" alpha3="JPN" numeric="392" />   
+   <country name="Liberia" alpha2 ="LR" alpha3="LBR" numeric="430" /> 
+   <country name="Malta" alpha2 ="MT" alpha3="MLT" numeric="470" />  
+   <country name="Marshall Islands" alpha2 ="MH" alpha3="MHL" numeric="584" />  
+   <country name="Montenegro" alpha2 ="ME" alpha3="MNE" numeric="499" />     
+   <country name="Netherlands" alpha2 ="NL" alpha3="NLD" numeric="528" />    
    <country name="Norway" alpha2 ="NO" alpha3="NOR" numeric="578" />     
-   <country name="Italy" alpha2 ="IT" alpha3="ITA" numeric="380" /> 
-   <country name="Germany" alpha2 ="DE" alpha3="DEU" numeric="376" />
-   <country name="Iceland" alpha2 ="IS" alpha3="ISL" numeric="352" />                    
+   <country name="Palau" alpha2 ="PW" alpha3="PLW" numeric="585" />     
+   <country name="Panama" alpha2 ="PA" alpha3="PAN" numeric="591" />   
+   <country name="Poland" alpha2 ="PL" alpha3="POL" numeric="616" />          
+   <country name="Portugal" alpha2 ="PT" alpha3="PRT" numeric="620" />         
+   <country name="Saint Vincent and the Grenadines" alpha2 ="VC" alpha3="VCT" numeric="670" />   
+   <country name="Serbia" alpha2 ="RS" alpha3="SRB" numeric="688" />           
+   <country name="Sierra Leone" alpha2 ="SL" alpha3="SLE" numeric="694" />    
+   <country name="Singapore" alpha2 ="SG" alpha3="SGP" numeric="602" />          
+   <country name="South Africa" alpha2 ="ZA" alpha3="ZAF" numeric="710" />         
+   <country name="Spain" alpha2 ="ES" alpha3="ESP" numeric="724" />      
+   <country name="Sweden" alpha2 ="SE" alpha3="SWE" numeric="752" />    
    <country name="United Kingdom of Great Britain and Northern Ireland" alpha2 ="GB" alpha3="GBR" numeric="826">  
       <altName name="United Kingdom" />
    </country> 
    <country name="United States of America" alpha2 ="US" alpha3="USA" numeric="840">  
       <altName name="United States" />
    </country>        
+   <country name="Virgin Islands (British)" alpha2 ="VG" alpha3="VGB" numeric="092" >  
+      <altName name="British Virgin Islands" />
+   </country>      
 </countries>

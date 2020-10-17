@@ -45,6 +45,7 @@ public class Country {
    private final String name;
    private final String alpha2;
    private final String alpha3;
+   private List<String> altNames = null;
    private final int numeric;
 
    /**
@@ -92,6 +93,7 @@ public class Country {
       this.alpha2 = alpha2;
       this.alpha3 = alpha3;
       this.numeric = numeric;
+      this.altNames = altNames;
       if (addToCache) {
          createCache();
          if (altNames == null) {
@@ -199,6 +201,25 @@ public class Country {
     */
    public String getName() {
       return name;
+   }
+
+   /**
+    * Return the country alternate names. Note that this notion does not exist in the ISO 3166-1 standard. But it helps to
+    * for "United Kingdom of Great Britain and Northern Ireland".
+    *
+    * @return the country alternate names
+    */
+   public List<String> getAlternateNames() {
+      return altNames;
+   }
+
+   /**
+    * Return true if the country has alternate names.
+    *
+    * @return true if the country has alternate names
+    */
+   public boolean hasAlternateNames() {
+      return altNames != null;
    }
 
    /**
