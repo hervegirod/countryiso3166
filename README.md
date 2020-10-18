@@ -27,4 +27,7 @@ possible to get the alternate names for a country by the `getAlternateNames()` m
 The `Country.listCountries()` method return the list of supported countries
 
 ## Adding a Country
-A custom country code can be added by simply using of the the constructors.
+A custom country code can be added by simply using one of the constructors.
+
+# List of supported countries
+ See https://github.com/hervegirod/countryiso3166/blob/main/src/org/girod/iso3166/countries.xml

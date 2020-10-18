@@ -2,3 +2,11 @@
 
 == Version 0.1 ==
  - Creation of the project
+
+== Version 0.2 ==
+ - Make the Country class comparable and Serializable
+ - Add a hashCode and equals methods to the Country class
+ - Fix the Germany numeric code which was incorrect
+ - Added the following states: Bahrain, Bangladesh, Cyprus, Djibouti, India, Iran, Jordan, Kuwait, Korea,
+   Macao, Malaysia, Pakistan, Philippines, Qatar, Russia, Saudi Arabia, Sri Lanka, Sudan, Thailand, Turkey, United Arab Emirates,
+   Vietnam, Yemen

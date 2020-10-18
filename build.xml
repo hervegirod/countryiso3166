@@ -64,6 +64,7 @@
          <fileset description="core source directory" dir="${src.dir}/..">
             <include name="src/**/*.java"/>
             <include name="src/**/*.xml"/>
+            <include name="src/**/*.xsd"/>            
             <include name="src/**/*.properties"/>
             <include name="src/manifest.mf"/>
          </fileset>
@@ -129,6 +130,7 @@
          <fileset defaultexcludes="yes" dir="${build.classes.dir}">
             <include name="org/**/*.class"/>
             <include name="org/**/*.xml"/>
+            <include name="org/**/*.xsd"/>            
             <include name="org/**/*.properties"/>
          </fileset>
       </jar>
