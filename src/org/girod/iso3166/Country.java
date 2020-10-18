@@ -27,20 +27,22 @@ the project website at the project page on https://github.com/hervegirod/country
 package org.girod.iso3166;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.PropertyResourceBundle;
 
 /**
  * Represent one ISO 3166-1 Country.
  *
- * @since 0.1
+ * @version 0.2
  */
-public class Country {
+public class Country implements Comparable<Country>, Serializable {
    private static Cache CACHE = null;
    private final String name;
    private final String alpha2;
@@ -102,6 +104,31 @@ public class Country {
             addCountryToCache(altNames);
          }
       }
+   }
+
+   @Override
+   public int hashCode() {
+      int hash = 3;
+      hash = 47 * hash + Objects.hashCode(this.name);
+      return hash;
+   }
+
+   @Override
+   public boolean equals(Object obj) {
+      if (this == obj) {
+         return true;
+      }
+      if (obj == null) {
+         return false;
+      }
+      if (getClass() != obj.getClass()) {
+         return false;
+      }
+      final Country other = (Country) obj;
+      if (!Objects.equals(this.name, other.name)) {
+         return false;
+      }
+      return true;
    }
 
    public static void main(String[] args) {
@@ -283,6 +310,11 @@ public class Country {
 
    private void addCountryToCache(List<String> altNames) {
       CACHE.addCountryToCache(this, altNames);
+   }
+
+   @Override
+   public int compareTo(Country o) {
+      return name.compareTo(o.name);
    }
 
    static class Cache {

@@ -2,54 +2,87 @@
 <countries>
    <country name="Afghanistan" alpha2 ="AF" alpha3="AFG" numeric="004" /> 
    <country name="Argentina" alpha2 ="AR" alpha3="ARG" numeric="032" />
-   <country name="Austria" alpha2 ="AT" alpha3="AUT" numeric="040"/>                    
+   <country name="Austria" alpha2 ="AT" alpha3="AUT" numeric="040"/>    
+   <country name="Bahrain" alpha2 ="BH" alpha3="BHR" numeric="048"/>      
+   <country name="Bangladesh" alpha2 ="BD" alpha3="BGD" numeric="050"/>       
    <country name="Belgium" alpha2 ="BE" alpha3="BEL" numeric="056" />  
    <country name="Bolivia (Plurinational State of)" alpha2 ="BO" alpha3="BOL" numeric="068">  
       <altName name="Bolivia" />
    </country>    
    <country name="Brazil" alpha2 ="BR" alpha3="BRA" numeric="076" />  
    <country name="Canada" alpha2 ="CA" alpha3="CAN" numeric="124" />   
-   <country name="China" alpha2 ="CH" alpha3="CHN" numeric="156" />    
+   <country name="China" alpha2 ="CH" alpha3="CHN" numeric="156" />  
+   <country name="Cyprus" alpha2 ="CY" alpha3="CYP" numeric="196" />         
    <country name="Colombia" alpha2 ="CO" alpha3="CON" numeric="170" />              
-   <country name="Croatia" alpha2 ="HR" alpha3="HRV" numeric="191" />     
+   <country name="Croatia" alpha2 ="HR" alpha3="HRV" numeric="191" />   
+   <country name="Djibouti" alpha2 ="DJ" alpha3="DJI" numeric="262" />      
    <country name="Dominica" alpha2 ="DM" alpha3="DMA" numeric="212" />  
    <country name="Egypt" alpha2 ="EG" alpha3="EGY" numeric="818" />   
    <country name="Estonia" alpha2 ="EE" alpha3="EST" numeric="233" />              
    <country name="Finland" alpha2 ="FI" alpha3="FIN" numeric="246" />      
    <country name="France" alpha2 ="FR" alpha3="FRA" numeric="250" />    
-   <country name="Germany" alpha2 ="DE" alpha3="DEU" numeric="376" />   
+   <country name="Germany" alpha2 ="DE" alpha3="DEU" numeric="276" />   
    <country name="Greece" alpha2 ="GR" alpha3="GRC" numeric="300" />   
    <country name="Greenland" alpha2 ="GL" alpha3="GRL" numeric="304" />        
    <country name="Hong Kong" alpha2 ="HK" alpha3="HKG" numeric="344" />       
    <country name="Hungary" alpha2 ="HU" alpha3="HUN" numeric="348" />        
-   <country name="Iceland" alpha2 ="IS" alpha3="ISL" numeric="352" />   
+   <country name="Iceland" alpha2 ="IS" alpha3="ISL" numeric="352" />  
+   <country name="India" alpha2 ="IN" alpha3="IND" numeric="356" />     
+   <country name="Iran (Islamic Republic of)" alpha2 ="IR" alpha3="IRN" numeric="364" >
+      <altName name="Iran" /> 
+   </country> 
+   <country name="Iraq" alpha2 ="IQ" alpha3="IRQ" numeric="368" />   
+   <country name="Ireland" alpha2 ="IE" alpha3="IRL" numeric="372" />          
    <country name="Israel" alpha2 ="IL" alpha3="ISR" numeric="376" />                            
    <country name="Italy" alpha2 ="IT" alpha3="ITA" numeric="380" />    
-   <country name="Japan" alpha2 ="JP" alpha3="JPN" numeric="392" />   
+   <country name="Japan" alpha2 ="JP" alpha3="JPN" numeric="392" /> 
+   <country name="Jordan" alpha2 ="JO" alpha3="JOR" numeric="400" />        
+   <country name="Kuwait" alpha2 ="KW" alpha3="KWT" numeric="414" />      
+   <country name="Korea, Republic of" alpha2 ="KR" alpha3="KOR" numeric="410" >  
+      <altName name="Republic of Korea" />
+   </country>     
    <country name="Liberia" alpha2 ="LR" alpha3="LBR" numeric="430" /> 
+   <country name="Macao" alpha2 ="MO" alpha3="MAC" numeric="446" />     
+   <country name="Malaysia" alpha2 ="MY" alpha3="MYS" numeric="458" />      
    <country name="Malta" alpha2 ="MT" alpha3="MLT" numeric="470" />  
    <country name="Marshall Islands" alpha2 ="MH" alpha3="MHL" numeric="584" />  
    <country name="Montenegro" alpha2 ="ME" alpha3="MNE" numeric="499" />     
    <country name="Netherlands" alpha2 ="NL" alpha3="NLD" numeric="528" />    
    <country name="Norway" alpha2 ="NO" alpha3="NOR" numeric="578" />     
+   <country name="Pakistan" alpha2 ="PK" alpha3="PAK" numeric="586" />       
    <country name="Palau" alpha2 ="PW" alpha3="PLW" numeric="585" />     
    <country name="Panama" alpha2 ="PA" alpha3="PAN" numeric="591" />   
+   <country name="Philippines" alpha2 ="PH" alpha3="PHL" numeric="608" />      
    <country name="Poland" alpha2 ="PL" alpha3="POL" numeric="616" />          
-   <country name="Portugal" alpha2 ="PT" alpha3="PRT" numeric="620" />         
-   <country name="Saint Vincent and the Grenadines" alpha2 ="VC" alpha3="VCT" numeric="670" />   
+   <country name="Portugal" alpha2 ="PT" alpha3="PRT" numeric="620" />   
+   <country name="Qatar" alpha2 ="QA" alpha3="QAT" numeric="634" />     
+   <country name="Russian Federation" alpha2 ="RU" alpha3="RUS" numeric="643" > 
+      <altName name="Russia" />
+   </country>    
+   <country name="Saint Vincent and the Grenadines" alpha2 ="VC" alpha3="VCT" numeric="670" /> 
+   <country name="Saudi Arabia" alpha2 ="SA" alpha3="SAU" numeric="682" />             
    <country name="Serbia" alpha2 ="RS" alpha3="SRB" numeric="688" />           
    <country name="Sierra Leone" alpha2 ="SL" alpha3="SLE" numeric="694" />    
    <country name="Singapore" alpha2 ="SG" alpha3="SGP" numeric="602" />          
    <country name="South Africa" alpha2 ="ZA" alpha3="ZAF" numeric="710" />         
-   <country name="Spain" alpha2 ="ES" alpha3="ESP" numeric="724" />      
-   <country name="Sweden" alpha2 ="SE" alpha3="SWE" numeric="752" />    
+   <country name="Spain" alpha2 ="ES" alpha3="ESP" numeric="724" />   
+   <country name="Sri Lanka" alpha2 ="LK" alpha3="LKA" numeric="144" /> 
+   <country name="Sudan" alpha2 ="SD" alpha3="SDN" numeric="729" />   
+   <country name="Sweden" alpha2 ="SE" alpha3="SWE" numeric="752" /> 
+   <country name="Thailand" alpha2 ="TH" alpha3="THA" numeric="764" />    
+   <country name="Turkey" alpha2 ="TR" alpha3="TUR" numeric="792" />       
+   <country name="United Arab Emirates" alpha2 ="AE" alpha3="ARE" numeric="784" />       
    <country name="United Kingdom of Great Britain and Northern Ireland" alpha2 ="GB" alpha3="GBR" numeric="826">  
       <altName name="United Kingdom" />
    </country> 
    <country name="United States of America" alpha2 ="US" alpha3="USA" numeric="840">  
       <altName name="United States" />
    </country>        
+   <country name="Viet Nam" alpha2 ="VN" alpha3="VNM" numeric="704" >  
+      <altName name="Vietnam" />
+   </country>     
    <country name="Virgin Islands (British)" alpha2 ="VG" alpha3="VGB" numeric="092" >  
       <altName name="British Virgin Islands" />
    </country>      
+   <country name="Yemen" alpha2 ="YE" alpha3="YEM" numeric="887" />   
 </countries>

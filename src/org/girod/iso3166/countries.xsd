@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:simpleType name="alpha2">
+      <xs:restriction base="xs:string">
+         <xs:pattern value="[A-Z][A-Z]"/>
+      </xs:restriction>
+   </xs:simpleType>   
+   <xs:simpleType name="alpha3">
+      <xs:restriction base="xs:string">
+         <xs:pattern value="[A-Z][A-Z][A-Z]"/>
+      </xs:restriction>
+   </xs:simpleType>      
+   <xs:simpleType name="numeric">
+      <xs:restriction base="xs:string">
+         <xs:pattern value="[0-9][0-9][0-9]"/>
+      </xs:restriction>
+   </xs:simpleType>    
+   <xs:complexType name="countries" >
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
+         <xs:element name="country" type="country" />                                               
+      </xs:sequence>  
+   </xs:complexType>    
+   <xs:complexType name="country" >
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+         <xs:element name="altName" type="altName" />                                               
+      </xs:sequence>  
+      <xs:attribute name="name" type="xs:string"/>      
+      <xs:attribute name="alpha2" type="alpha2"/>      
+      <xs:attribute name="alpha3" type="alpha3"/>     
+      <xs:attribute name="numeric" type="numeric"/>                
+   </xs:complexType>  
+   <xs:complexType name="altName" >
+      <xs:attribute name="name" type="xs:string"/>                     
+   </xs:complexType>         
+   <xs:element name="countries" type="countries"/>
+</xs:schema>

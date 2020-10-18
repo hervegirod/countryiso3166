@@ -39,9 +39,9 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 /**
- * Represent one ISO 3166-1 Country.
+ * Parse the XML fiel for the list of countries.
  *
- * @since 0.1
+ * @version 0.2
  */
 class CountryParser extends DefaultHandler {
    private Country.Cache cache = null;
